@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  background: white;
+
+  border: 2px solid #777;
+  padding: 30px 35px 40px;
+}
+
+/* =========================
+   CHECKBOX CHÍNH
+========================= */
+
+.check-all {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 2px solid #ddd;
+
+  color: #999;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.check-all input {
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   SỐ LƯỢNG
+========================= */
+
+.selected-count {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  color: #777;
+  font-size: 18px;
+}
+
+/* =========================
+   DANH SÁCH STATUS
+========================= */
+
+.status-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px 25px;
+}
+
+/* =========================
+   MỖI STATUS
+========================= */
+
+.status {
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  border: 2px solid #777;
+  border-radius: 6px;
+
+  color: #999;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+/* Checkbox con */
+
+.status input {
+  width: 25px;
+  height: 25px;
+
+  margin-left: 25px;
+  margin-right: 12px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   THANH MÀU BÊN TRÁI
+========================= */
+
+.status::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 10px;
+  height: 100%;
+
+  border-radius: 4px 0 0 4px;
+}
+
+/* Màu từng status */
+
+.status-1::before {
+  background: #aaa;
+}
+
+.status-2::before {
+  background: #aaa;
+}
+
+.status-3::before {
+  background: yellow;
+}
+
+.status-4::before {
+  background: #6666ff;
+}
+
+.status-5::before {
+  background: orange;
+}
+
+.status-6::before {
+  background: magenta;
+}
+
+.status-7::before {
+  background: green;
+}
+
+.status-8::before {
+  background: lime;
+}
+
+.status-9::before {
+  background: orangered;
+}
+
+.status-10::before {
+  background: red;
+}
